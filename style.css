@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Snell Roundhand, cursive;
+}
+body {
+    background: rgb(0, 0, 0);
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+#main{
+    animation: deslizar 4s forwards;
+}
+
+#head{
+    text-align: center;
+    display: block;   
+    position: relative;
+}
+
+#foto{
+    width: 8rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+
+#nome{
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+}
+
+section#rede-sociais{
+    flex-direction: column;
+    position: relative;
+    text-align: center; 
+}
+
+section#rede-sociais img{
+    width: 50px;
+    margin: 20px;
+    border-radius: 50%; 
+    box-sizing: border-box;  
+}
+
+@keyframes deslizar {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+
+  .content-coracao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 50px auto;
+    -webkit-animation: pulsa 1s linear 0s infinite;
+  }
+  @keyframes pulsa {
+    0% {
+      transform: scale(0.9) rotate(0deg);
+    }
+    50% {
+      transform: scale(1) rotate(0deg);
+    }
+    70% {
+      transform: scale(1.1) rotate(0deg);
+    }
+    80% {
+      transform: scale(1.2) rotate(0deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  .square {
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    background: rgb(117, 6, 26);
+    position: absolute;
+    top: 30px;
+  }
+  .circle:after,
+  .circle:before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 55px;
+    border-radius: 50%;
+    background: rgb(117, 6, 26);
+  }
+  .circle:after {
+    left: 5px;
+    top: 6px;
+  }
+  .circle:before {
+    right: 5px;
+    top: 6px;
+  }
+
+
+  .box p{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .box{
+    display: flex;
+    position: absolute;
+    width: 1500px;
+    height: 550px;
+    background-color: rgba(153, 24, 24, 0.829);
+    border-radius: 5px;
+    box-shadow: 5px;
+    top: 150px;
+    left: 5%;
+    
+  }
